@@ -13,9 +13,6 @@ const setSessionTimer = (event) => {
     let time = parseInt(sessionInput.value); // Ensure that the input is a number
     if (!isNaN(time) && time >= 0) {
       // Check if the input is a valid number
-
-      sessionTimer = true;
-
       if (time >= 60) {
         hourSpan.innerText = Math.floor(time / 60);
         minuteSpan.innerText = time % 60;
@@ -26,7 +23,8 @@ const setSessionTimer = (event) => {
     } else {
       alert("Invalid input, please enter a positive number.");
     }
-  } else {
+  } 
+  else {
     alert("Break time cannot be empty.");
   }
 };
@@ -38,7 +36,7 @@ const setBreakTimer = () => {
       // Check if the input is a valid number
 
       if (time >= 60) {
-        hourSpan.innerText = Math.floor(time / 60);
+        // hourSpan.innerText = Math.floor(time / 60);
         minuteSpan.innerText = time % 60;
       } else {
         hourSpan.innerText = 0; // Set hour to 0 if less than 60 minutes
