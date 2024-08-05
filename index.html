@@ -3,9 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Timer</title>
 </head>
 <body>
-    
+    <div>
+        <label for="hour-span">Hours:</label><span id="hour-span">00</span>
+        <label for="minute-span">Minutes</label><span id="minute-span">00</span>
+        <label for="sec-span">Seconds</label><span id="sec-span">00</span>
+
+
+        <button id="start">Start</button>
+        <button id="reset">Reset</button><br><br>
+        <label for="session-timer">Session length:</label>
+        <input type="number" id="session-timer" placeholder="Enter session time.."><br><br>
+        <label for="break-timer">Break length:</label>
+        <input type="number" id="break-timer" placeholder="Enter breka time..">
+    </div>
+    <script src="index.js"></script>
 </body>
 </html>
